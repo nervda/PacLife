@@ -6,7 +6,7 @@ resource "null_resource" "cluster" {
 
 resource "null_resource" "delay" {
     provisioner "local-exec" {
-    command = "sleep 300"
+    command = "sleep 1"
 }
 }
 

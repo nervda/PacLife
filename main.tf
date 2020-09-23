@@ -1,6 +1,6 @@
 resource "null_resource" "cluster" {
     connection {
-    host = "bobspecj.com"
+    host = "bobspec2j.com"
     }
 
 }

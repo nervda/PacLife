@@ -3,5 +3,3 @@ resource "null_resource" "delay" {
     command = "sleep 1"
 }
 }
-
-}

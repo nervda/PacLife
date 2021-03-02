@@ -1,10 +1,10 @@
 resource "null_resource" "delay" {
     provisioner "local-exec" {
-    command = "sleep 30"
+    command = "sleep 300"
 }
 }
-resource "null_resource" "delay2" {
+resource "null_resource" "delay1" {
     provisioner "local-exec" {
-    command = "sleep 30"
+    command = "sleep 300"
 }
 }

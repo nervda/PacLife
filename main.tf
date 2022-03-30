@@ -8,8 +8,4 @@ resource "null_resource" "delay1" {
     command = "sleep 600"
 }
 }
-resource "null_resource" "delay3" {
-    provisioner "local-exec" {
-    command = "sleep 600"
-}
-}
+

@@ -8,12 +8,17 @@ terraform {
   }
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
+resource "aws_instance" "foo" {
+  ami           = "ami-005e54dee72cc1d00" # us-west-2
+  instance_type = "t2.micro"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+  network_interface {
+    network_interface_id = aws_network_interface.foo.id
+    device_index         = 0
+  }
+
+  credit_specification {
+    cpu_credits = "unlimited"
   }
 }
 
@@ -24,7 +29,7 @@ resource "null_resource" "delay" {
 }
 resource "null_resource" "delay1" {
     provisioner "local-exec" {
-    command = "sleep 30"
+    command = "sleep 1"
 }
 }
 

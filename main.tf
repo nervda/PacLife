@@ -1,5 +1,3 @@
-#adding comment for a trigger.
-
 terraform {
   required_providers {
     aws = {

@@ -9,7 +9,7 @@ resource "null_resource" "delay2" {
 }
 }
 
-resource "null_resource" "delay3" {
+resource "null_resource" "delayc" {
     provisioner "local-exec" {
     command = "sleep 1"
 }

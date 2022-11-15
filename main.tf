@@ -14,3 +14,8 @@ resource "null_resource" "delayC" {
     command = "sleep 1"
 }
 }
+
+output "outputA" {
+    description = "make hay"
+    value = "Octave"
+}

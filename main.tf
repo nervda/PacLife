@@ -407,7 +407,4 @@ output "output98" {
     description = "make hay"
     value = "Octave"
 }
-output "output99" {
-    description = "make hay"
-    value = "Octave"
-}
+

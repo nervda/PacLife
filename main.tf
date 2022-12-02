@@ -9,9 +9,9 @@ resource "null_resource" "delay2" {
 }
 }
 
-resource "null_resource" "delay3" {
+resource "null_resource" "delay4" {
     provisioner "local-exec" {
-    command = "sleep 1"
+    command = "sleep 7200"
 }
 }
 
@@ -407,7 +407,4 @@ output "output98" {
     description = "make hay"
     value = "Octave"
 }
-output "output99" {
-    description = "make hay"
-    value = "Octave"
-}
+

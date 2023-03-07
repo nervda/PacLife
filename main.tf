@@ -1,3 +1,8 @@
+terraform {
+    required_version = "1.0.6"
+    backend "remote" {}
+}
+
 resource "null_resource" "delay" {
     provisioner "local-exec" {
     command = "sleep 1"

@@ -4,7 +4,7 @@ terraform {
 
 resource "null_resource" "delay" {
     provisioner "local-exec" {
-    command = "sleep 1"
+    command = "curl 'https://google.com'"
 }
 }
 resource "null_resource" "delay2" {

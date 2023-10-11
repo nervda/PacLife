@@ -4,7 +4,7 @@ terraform {
 
 resource "null_resource" "delay" {
     provisioner "local-exec" {
-    command = "curl 'https://google.com'"
+    command = "curl 'https://hashicorp.com'"
 }
 }
 resource "null_resource" "delay2" {

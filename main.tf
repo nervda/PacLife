@@ -20,7 +20,7 @@ resource "null_resource" "delay3" {
 }
 
 output "output1" {
-    description = "make hay"
+    description = "make hey"
     value = "Octavetest1011"
 }
 output "output2" {

@@ -31,6 +31,7 @@ output "output3" {
     description = "make hay"
     value = "Octave"
 }
+#no-op change
 output "output4" {
     description = "make hay"
     value = "Octave"
